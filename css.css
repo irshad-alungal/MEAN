@@ -1,0 +1,23 @@
+
+div{
+    height: 500px;
+    width: 250px;
+    border: 2px solid #000000;
+    float: inherit;
+    display: inline;
+}
+#d1 {
+    background-color: green;
+}
+#d2 {
+    background-color: rgb(60, 0, 128);
+}
+#d3 {
+    background-color: orange;
+}
+#d4 {
+    background-color: paleturquoise;
+}
+#d5 {
+    background-color: hotpink;
+} 
