@@ -1,0 +1,12 @@
+p{
+    line-height: 1.75rem;
+    font-size: 1rem;
+    text-align: justify;
+  text-justify: inter-word;
+}
+@media (min-width:600px){
+    p{
+        line-height: 1rem;
+        font-size: 0.75rem;
+    }
+}
