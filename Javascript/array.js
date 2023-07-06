@@ -29,3 +29,13 @@ for ( i = 0; i < weekDays.length; i++) {
 for (let day of weekDays) {
     console.log(day);
 }
+
+// display array using for  loop and in keyword - methods-4
+for (let day in weekDays) {
+    console.log(day);
+}
+
+// display array using for  loop and in keyword - methods-5
+for (let day in weekDays) {
+    console.log(weekDays[day]);
+}
