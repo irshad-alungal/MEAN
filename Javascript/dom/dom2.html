@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+    <form>
+        <label for="firstname">age: </label>
+        <input id="age" type="text" name="firstname"  required>
+        
+        <div id="result"></div>
+        <input type="button" onclick="validateAge()" value="Submit">
+    </form>
+</body>
+<script>
+    function validateAge() {
+        checkAge = age.value
+        console.log(checkAge);
+        if (checkAge>=18){
+            result.innerHTML = `<p style="color:green"> Eligibile</p>`
+
+        }
+        else {
+            result.innerHTML = `<p style="color:red"> Not Eligibile</p>`
+        }
+    }
+</script>
+</html>
