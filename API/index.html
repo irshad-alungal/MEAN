@@ -37,6 +37,7 @@
                 if (req.status>=200 && req.status<300){
                     todo = JSON.parse(req.responseText);
                     console.log(todo);
+                    populateData(todo);
                 }
                 else {
                     alert ("can't perform request")
@@ -45,6 +46,22 @@
             else{
                 alert ("Failed to fetch data from given API")
             }
+        }
+
+        function populateData(todo) {
+            let htmlData = ``;
+
+            todo.forEach((todo) => {
+                htmlData = `
+                <tr>
+                    <td>${todo.userId}</td>
+                    <td>${todo.id}</td>
+                    <td>${todo.title}</td>
+                    <td>${todo.completed}</td>
+                </tr>`;
+
+                result.innerHTML += htmlData;
+            });
         }
     </script>
 </html>
