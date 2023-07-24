@@ -29,5 +29,22 @@
         var req = new XMLHttpRequest();
         req.open('GET','https://jsonplaceholder.typicode.com/todos');
         req.send();
+
+        console.log(req.readyState);
+        req.onreadystatechange = () => {
+            console.log(req.readyState);
+            if(req.readyState==4){
+                if (req.status>=200 && req.status<300){
+                    todo = JSON.parse(req.responseText);
+                    console.log(todo);
+                }
+                else {
+                    alert ("can't perform request")
+                }
+            }
+            else{
+                alert ("Failed to fetch data from given API")
+            }
+        }
     </script>
 </html>
